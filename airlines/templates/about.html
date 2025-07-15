@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Airline Demand Insights</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 106px; /* Adjust for fixed navbar */
+        }
+        .navbar {
+            background-color: #3f51b5;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .navbar-brand {
+            color: white !important;
+            font-weight: bold;
+        }
+        .container {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        .card {
+            border: none;
+            border-radius: 1.25rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+        }
+        h1, h2 {
+            color: #3f51b5;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+        p {
+            line-height: 1.7;
+            color: #555;
+        }
+        footer {
+            background-color: #3f51b5;
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'home' %}">
+                <i class="fas fa-plane"></i> Airline Insights
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="{% url 'home' %}">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'about' %}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact' %}">Contact</a> {# Updated link #}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="text-center">About Airline Demand Insights</h1>
+        <div class="card p-4">
+            <div class="card-body">
+                <p>Welcome to Airline Demand Insights, a tool developed for the Hostel Group to monitor and analyze market demand trends in the Australian airline booking industry. Our goal is to provide a simple, intuitive web interface that empowers your team to make informed decisions without needing coding expertise.</p>
+                
+                <h2>Our Mission</h2>
+                <p>To deliver actionable insights into airline booking patterns, helping hostels strategically plan and optimize their services in response to market dynamics. We focus on identifying popular routes, understanding price trends, and pinpointing high-demand periods or locations.</p>
+
+                <h2>Key Features:</h2>
+                <ul>
+                    <li>**Data Overview:** Visualizations and tables presenting key metrics like popular routes and average price trends.</li>
+                    <li>**Interactive Filters:** Client-side filtering and search capabilities to explore specific routes or data points (currently operates on dummy data).</li>
+                    <li>**User-Friendly Interface:** Designed with Bootstrap for a modern, responsive, and easy-to-navigate experience.</li>
+                    <li>**Scalable Architecture:** Built with Django, allowing for future integration with real-time APIs and more complex data processing as needs evolve.</li>
+                </ul>
+
+                <h2>Development Approach:</h2>
+                <p>This application was developed prioritizing **fast results with minimal spending**, utilizing readily available free tools and a focus on core functionality with dummy data for initial demonstration. This ensures a quick setup and clear understanding of the proposed solution's capabilities.</p>
+                <p>We believe this tool can become a valuable long-term asset for your market research and operational planning.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2025 Airline Demand Insights. All rights reserved.</p>
+            <p><small>Developed for Hostel Group Market Research</small></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
